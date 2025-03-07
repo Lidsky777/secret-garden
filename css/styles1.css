@@ -1,0 +1,117 @@
+/* Основные настройки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf5;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+/* Обычный текст */
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Комплименты (курсив, серый цвет) */
+.compliment {
+    font-style: italic;
+    color: #555;
+}
+
+/* Кнопка "Вот так ИИ видит тебя" */
+.start-slideshow {
+    padding: 15px 30px;
+    background-color: #fbd4d4;
+    color: #5a3e2b;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.start-slideshow:hover {
+    background-color: #f8c7c7;
+}
+
+/* Контейнер слайд-шоу */
+.slideshow-container {
+    margin-top: 20px;
+}
+
+/* Текст "Вот так ИИ видит тебя" */
+.ai-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d06060;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInSlide 1s forwards;
+}
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Слайд-шоу */
+.slideshow {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Элементы слайда (включая изображение и подпись) */
+.slide-item {
+    display: none; /* Все скрыты по умолчанию */
+    text-align: center;
+}
+
+.slide-item img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px; /* Отступ между изображением и подписью */
+}
+
+/* Подписи под изображениями */
+figcaption {
+    font-size: 16px;
+    color: #5a3e2b;
+    font-style: italic;
+}
+
+/* Кнопка закрытия страницы */
+.close-btn {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ff4a4a;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #e50000;
+    transform: scale(1.2); /* Увеличивается при наведении */
+}
+
+/* Скрытые элементы */
+.hidden {
+    display: none;
+}
